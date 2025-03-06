@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Mar 03 2025 20:09:37 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Mar 06 2025 18:44:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="67b11fef5478f311b250182f" data-wf-site="67994c277db63d83079bbdf0">
 <head>
   <meta charset="utf-8">
@@ -25,6 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
   -o-font-smoothing: antialiased;
   -webkit-appearance:none;
+}
+</style>
+  <style>
+  /* Ensuring general resets */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Carousel container styles */
+  .carousel-container {
+    width: 100%;              /* Full width of the container */
+    /*overflow: hidden;         /* Hide images that go beyond the container */
+    position: relative;       /* Position context for carousel */
+    display: flex;
+    justify-content: center;  /* Center the carousel */
+  }
+  .carousel {
+    display: flex;            /* Arrange images in a row */
+    animation: scroll 40s linear infinite !important; /* Scroll animation */
+  }
+  /* Image styles */
+  .carousel img {
+    width: 400px;             /* Fixed width of the images */
+   /* height: 200px; */           /* Fixed height of the images */
+    margin-right: 10px;       /* Space between images */
+    object-fit: cover;        /* Ensure aspect ratio is maintained */
+    display: block;           /* Prevent images from having extra space below */
+  }
+  /* Scroll animation */
+ @keyframes scroll {
+  0% {
+    transform: translateX(0) ;
+  }
+  100% {
+    transform: translateX(-6400px);
+  }
 }
 </style>
 </head>
@@ -91,8 +128,8 @@
                   </svg></div>
               </a>
             </div>
-            <div class="divider-horizontal"></div>
           </div>
+          <div class="divider-horizontal"></div>
           <div class="padding-top padding-medium footer-kaleido">
             <div class="footer3_bottom-wrapper">
               <div class="w-layout-grid footer3_legal-list"></div>
@@ -122,10 +159,6 @@
       </div>
     </div>
   </section>
-  <div data-w-id="be1830af-cec0-bf6f-2811-9bde4584a457" class="carousel-container">
-    <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="photo-container"><img src="images/TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground.png" loading="lazy" sizes="385px" srcset="images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-500.png 500w, images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-800.png 800w, images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-1080.png 1080w, images/TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground.png 1500w" alt="photo of web team." class="photo-image"><img src="images/TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-500.png 500w, images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-800.png 800w, images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground.png 1500w" alt="photo of co-chairs &amp; logistics team." class="photo-image"><img src="images/TEXT-NAME-Motion-Team-transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-500.png 500w, images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-800.png 800w, images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Motion-Team-transparent-BW-minbackground.png 1500w" alt="photo of motion team." class="photo-image"><img src="images/TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-500.png 500w, images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-800.png 800w, images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground.png 1500w" alt="photo of fundraising team." class="photo-image"><img src="images/TEXT-NAME-Photography-Team-2-Transparent-BWbackground.png" loading="lazy" sizes="385px" srcset="images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-500.png 500w, images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-800.png 800w, images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-1080.png 1080w, images/TEXT-NAME-Photography-Team-2-Transparent-BWbackground.png 1500w" alt="photo of photography team." class="photo-image"><img src="images/TEXT-NAME-Branding-Team-Transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-500.png 500w, images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-800.png 800w, images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Branding-Team-Transparent-BW-minbackground.png 1500w" alt="photo of branding team." class="photo-image"><img src="images/TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud.png" loading="lazy" sizes="385px" srcset="images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-500.png 500w, images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-800.png 800w, images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-1080.png 1080w, images/TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud.png 1500w" alt="photo of social media team." class="photo-image"><img src="images/TEXT-NAME-Team-Leads-Funny-Pose-BW-background.png" loading="lazy" sizes="385px" srcset="images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-500.png 500w, images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-800.png 800w, images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-1080.png 1080w, images/TEXT-NAME-Team-Leads-Funny-Pose-BW-background.png 1500w" alt="photo of team leads" class="photo-image"></div>
-    <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="photo-container"><img src="images/TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground.png" loading="lazy" sizes="385px" srcset="images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-500.png 500w, images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-800.png 800w, images/d2bd816bf07d1f12677d993e44263513_TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground-p-1080.png 1080w, images/TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground.png 1500w" alt="photo of web team." class="photo-image"><img src="images/TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-500.png 500w, images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-800.png 800w, images/2eff5f518cc1a48e3a90271438687f6c_TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground.png 1500w" alt="photo of co-chairs &amp; logistics team." class="photo-image"><img src="images/TEXT-NAME-Motion-Team-transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-500.png 500w, images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-800.png 800w, images/3e403793b6ad5959a1a3cf8a242e0485_TEXT-NAME-Motion-Team-transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Motion-Team-transparent-BW-minbackground.png 1500w" alt="photo of motion team." class="photo-image"><img src="images/TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-500.png 500w, images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-800.png 800w, images/6f756a85f6cf70591e8fdc2251f2eaed_TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground.png 1500w" alt="photo of fundraising team." class="photo-image"><img src="images/TEXT-NAME-Photography-Team-2-Transparent-BWbackground.png" loading="lazy" sizes="385px" srcset="images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-500.png 500w, images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-800.png 800w, images/3aa785269d05fc6f9a941aaede6b419b_TEXT-NAME-Photography-Team-2-Transparent-BWbackground-p-1080.png 1080w, images/TEXT-NAME-Photography-Team-2-Transparent-BWbackground.png 1500w" alt="photo of photography team." class="photo-image"><img src="images/TEXT-NAME-Branding-Team-Transparent-BW-minbackground.png" loading="lazy" sizes="385px" srcset="images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-500.png 500w, images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-800.png 800w, images/2c2893acc36f8f8041e0a94107bb61ec_TEXT-NAME-Branding-Team-Transparent-BW-minbackground-p-1080.png 1080w, images/TEXT-NAME-Branding-Team-Transparent-BW-minbackground.png 1500w" alt="photo of branding team." class="photo-image"><img src="images/TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud.png" loading="lazy" sizes="385px" srcset="images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-500.png 500w, images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-800.png 800w, images/2061421eb80a1eb8ac44603d697930d7_TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud-p-1080.png 1080w, images/TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud.png 1500w" alt="photo of social media team." class="photo-image"><img src="images/TEXT-NAME-Team-Leads-Funny-Pose-BW-background.png" loading="lazy" sizes="385px" srcset="images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-500.png 500w, images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-800.png 800w, images/8350057f2391fad2068f9a1a277e1a54_TEXT-NAME-Team-Leads-Funny-Pose-BW-background-p-1080.png 1080w, images/TEXT-NAME-Team-Leads-Funny-Pose-BW-background.png 1500w" alt="photo of team leads" class="photo-image"></div>
-  </div>
   <header class="section_header63">
     <div class="padding-global">
       <div class="container-large">
@@ -152,30 +185,6 @@
       </div>
     </div>
   </header>
-  <div class="carousel-wrapper">
-    <div class="image-container">
-      <div class="team-photo-container">
-        <div class="div-block-18">
-          <div class="text-block-21">This is some text inside of a div block.</div>
-        </div><img src="images/3-Chairsmen-2-transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/3-Chairsmen-2-transparent-BW-minbackground-p-500.jpg 500w, images/3-Chairsmen-2-transparent-BW-minbackground-p-800.jpg 800w, images/3-Chairsmen-2-transparent-BW-minbackground-p-1080.jpg 1080w, images/3-Chairsmen-2-transparent-BW-minbackground-p-1600.jpg 1600w, images/3-Chairsmen-2-transparent-BW-minbackground-p-2000.jpg 2000w, images/3-Chairsmen-2-transparent-BW-minbackground-p-2600.jpg 2600w, images/3-Chairsmen-2-transparent-BW-minbackground-p-3200.jpg 3200w, images/3-Chairsmen-2-transparent-BW-minbackground.jpg 6000w" alt="photo of funny co-chairs.">
-      </div>
-      <div class="team-photo-container"><img src="images/Photography-Team-2-Transparent-BWbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Photography-Team-2-Transparent-BWbackground-p-500.jpg 500w, images/Photography-Team-2-Transparent-BWbackground-p-800.jpg 800w, images/Photography-Team-2-Transparent-BWbackground-p-1080.jpg 1080w, images/Photography-Team-2-Transparent-BWbackground-p-1600.jpg 1600w, images/Photography-Team-2-Transparent-BWbackground-p-2000.jpg 2000w, images/Photography-Team-2-Transparent-BWbackground-p-2600.jpg 2600w, images/Photography-Team-2-Transparent-BWbackground-p-3200.jpg 3200w, images/Photography-Team-2-Transparent-BWbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Social-Media-Team-Transparent-BWbackgroud.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Social-Media-Team-Transparent-BWbackgroud-p-500.jpg 500w, images/Social-Media-Team-Transparent-BWbackgroud-p-800.jpg 800w, images/Social-Media-Team-Transparent-BWbackgroud-p-1080.jpg 1080w, images/Social-Media-Team-Transparent-BWbackgroud-p-1600.jpg 1600w, images/Social-Media-Team-Transparent-BWbackgroud-p-2000.jpg 2000w, images/Social-Media-Team-Transparent-BWbackgroud-p-2600.jpg 2600w, images/Social-Media-Team-Transparent-BWbackgroud-p-3200.jpg 3200w, images/Social-Media-Team-Transparent-BWbackgroud.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Motion-Team-transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Motion-Team-transparent-BW-minbackground-p-500.jpg 500w, images/Motion-Team-transparent-BW-minbackground-p-800.jpg 800w, images/Motion-Team-transparent-BW-minbackground-p-1080.jpg 1080w, images/Motion-Team-transparent-BW-minbackground-p-1600.jpg 1600w, images/Motion-Team-transparent-BW-minbackground-p-2000.jpg 2000w, images/Motion-Team-transparent-BW-minbackground-p-2600.jpg 2600w, images/Motion-Team-transparent-BW-minbackground-p-3200.jpg 3200w, images/Motion-Team-transparent-BW-minbackground.jpg 6000w" alt="photo of motion team"></div>
-      <div class="team-photo-container"><img src="images/Design-Team-Transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Design-Team-Transparent-BW-minbackground-p-500.jpg 500w, images/Design-Team-Transparent-BW-minbackground-p-800.jpg 800w, images/Design-Team-Transparent-BW-minbackground-p-1080.jpg 1080w, images/Design-Team-Transparent-BW-minbackground-p-1600.jpg 1600w, images/Design-Team-Transparent-BW-minbackground-p-2000.jpg 2000w, images/Design-Team-Transparent-BW-minbackground-p-2600.jpg 2600w, images/Design-Team-Transparent-BW-minbackground-p-3200.jpg 3200w, images/Design-Team-Transparent-BW-minbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Fundraising-Team-funny-pose-2-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Fundraising-Team-funny-pose-2-BW-minbackground-p-500.jpg 500w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-800.jpg 800w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-1080.jpg 1080w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-1600.jpg 1600w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-2000.jpg 2000w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-2600.jpg 2600w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-3200.jpg 3200w, images/Fundraising-Team-funny-pose-2-BW-minbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Web-Design-Team-2-Transparent-BWbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Web-Design-Team-2-Transparent-BWbackground-p-500.jpg 500w, images/Web-Design-Team-2-Transparent-BWbackground-p-800.jpg 800w, images/Web-Design-Team-2-Transparent-BWbackground-p-1080.jpg 1080w, images/Web-Design-Team-2-Transparent-BWbackground-p-1600.jpg 1600w, images/Web-Design-Team-2-Transparent-BWbackground-p-2000.jpg 2000w, images/Web-Design-Team-2-Transparent-BWbackground-p-2600.jpg 2600w, images/Web-Design-Team-2-Transparent-BWbackground-p-3200.jpg 3200w, images/Web-Design-Team-2-Transparent-BWbackground.jpg 6000w" alt="photo of web team."></div>
-    </div>
-    <div class="image-container">
-      <div class="team-photo-container"><img src="images/3-Chairsmen-2-transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/3-Chairsmen-2-transparent-BW-minbackground-p-500.jpg 500w, images/3-Chairsmen-2-transparent-BW-minbackground-p-800.jpg 800w, images/3-Chairsmen-2-transparent-BW-minbackground-p-1080.jpg 1080w, images/3-Chairsmen-2-transparent-BW-minbackground-p-1600.jpg 1600w, images/3-Chairsmen-2-transparent-BW-minbackground-p-2000.jpg 2000w, images/3-Chairsmen-2-transparent-BW-minbackground-p-2600.jpg 2600w, images/3-Chairsmen-2-transparent-BW-minbackground-p-3200.jpg 3200w, images/3-Chairsmen-2-transparent-BW-minbackground.jpg 6000w" alt="photo of funny co-chairs."></div>
-      <div class="team-photo-container"><img src="images/Photography-Team-2-Transparent-BWbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Photography-Team-2-Transparent-BWbackground-p-500.jpg 500w, images/Photography-Team-2-Transparent-BWbackground-p-800.jpg 800w, images/Photography-Team-2-Transparent-BWbackground-p-1080.jpg 1080w, images/Photography-Team-2-Transparent-BWbackground-p-1600.jpg 1600w, images/Photography-Team-2-Transparent-BWbackground-p-2000.jpg 2000w, images/Photography-Team-2-Transparent-BWbackground-p-2600.jpg 2600w, images/Photography-Team-2-Transparent-BWbackground-p-3200.jpg 3200w, images/Photography-Team-2-Transparent-BWbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Social-Media-Team-Transparent-BWbackgroud.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Social-Media-Team-Transparent-BWbackgroud-p-500.jpg 500w, images/Social-Media-Team-Transparent-BWbackgroud-p-800.jpg 800w, images/Social-Media-Team-Transparent-BWbackgroud-p-1080.jpg 1080w, images/Social-Media-Team-Transparent-BWbackgroud-p-1600.jpg 1600w, images/Social-Media-Team-Transparent-BWbackgroud-p-2000.jpg 2000w, images/Social-Media-Team-Transparent-BWbackgroud-p-2600.jpg 2600w, images/Social-Media-Team-Transparent-BWbackgroud-p-3200.jpg 3200w, images/Social-Media-Team-Transparent-BWbackgroud.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Motion-Team-transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Motion-Team-transparent-BW-minbackground-p-500.jpg 500w, images/Motion-Team-transparent-BW-minbackground-p-800.jpg 800w, images/Motion-Team-transparent-BW-minbackground-p-1080.jpg 1080w, images/Motion-Team-transparent-BW-minbackground-p-1600.jpg 1600w, images/Motion-Team-transparent-BW-minbackground-p-2000.jpg 2000w, images/Motion-Team-transparent-BW-minbackground-p-2600.jpg 2600w, images/Motion-Team-transparent-BW-minbackground-p-3200.jpg 3200w, images/Motion-Team-transparent-BW-minbackground.jpg 6000w" alt="photo of motion team"></div>
-      <div class="team-photo-container"><img src="images/Design-Team-Transparent-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Design-Team-Transparent-BW-minbackground-p-500.jpg 500w, images/Design-Team-Transparent-BW-minbackground-p-800.jpg 800w, images/Design-Team-Transparent-BW-minbackground-p-1080.jpg 1080w, images/Design-Team-Transparent-BW-minbackground-p-1600.jpg 1600w, images/Design-Team-Transparent-BW-minbackground-p-2000.jpg 2000w, images/Design-Team-Transparent-BW-minbackground-p-2600.jpg 2600w, images/Design-Team-Transparent-BW-minbackground-p-3200.jpg 3200w, images/Design-Team-Transparent-BW-minbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Fundraising-Team-funny-pose-2-BW-minbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Fundraising-Team-funny-pose-2-BW-minbackground-p-500.jpg 500w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-800.jpg 800w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-1080.jpg 1080w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-1600.jpg 1600w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-2000.jpg 2000w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-2600.jpg 2600w, images/Fundraising-Team-funny-pose-2-BW-minbackground-p-3200.jpg 3200w, images/Fundraising-Team-funny-pose-2-BW-minbackground.jpg 6000w" alt=""></div>
-      <div class="team-photo-container"><img src="images/Web-Design-Team-2-Transparent-BWbackground.jpg" loading="lazy" sizes="(max-width: 479px) 5vw, (max-width: 991px) 6vw, (max-width: 1919px) 7vw, 32vw" srcset="images/Web-Design-Team-2-Transparent-BWbackground-p-500.jpg 500w, images/Web-Design-Team-2-Transparent-BWbackground-p-800.jpg 800w, images/Web-Design-Team-2-Transparent-BWbackground-p-1080.jpg 1080w, images/Web-Design-Team-2-Transparent-BWbackground-p-1600.jpg 1600w, images/Web-Design-Team-2-Transparent-BWbackground-p-2000.jpg 2000w, images/Web-Design-Team-2-Transparent-BWbackground-p-2600.jpg 2600w, images/Web-Design-Team-2-Transparent-BWbackground-p-3200.jpg 3200w, images/Web-Design-Team-2-Transparent-BWbackground.jpg 6000w" alt="photo of web team."></div>
-    </div>
-  </div>
   <section class="countdown">
     <div data-w-id="b47899a6-73ca-1ec8-fefc-22f0288707aa" style="opacity:0" class="demo-clock-wrapper">
       <div class="countdown-title">
@@ -261,6 +270,20 @@
       </div>
     </div>
   </div>
+  <div class="w-embed">
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="images/TEXT-NAME-Web-Design-Team-2-Transparent-BWbackground.png" alt="Image 1">
+        <img src="images/TEXT-NAME-3-Chairsmen-2-transparent-BW-minbackground.png" alt="Image 2">
+        <img src="images/TEXT-NAME-Motion-Team-transparent-BW-minbackground.png" alt="Image 3">
+        <img src="images/TEXT-NAME-Fundraising-Team-funny-pose-2-BW-minbackground.png" alt="Image 4">
+        <img src="images/TEXT-NAME-Branding-Team-Transparent-BW-minbackground.png" alt="Image 5">
+        <img src="images/TEXT-NAME-Social-Media-Team-Transparent-BWbackgroud.png" alt="Image 6">
+        <img src="images/TEXT-NAME-Photography-Team-2-Transparent-BWbackground.png" alt="Image 7">
+        <img src="images/TEXT-NAME-Team-Leads-Funny-Pose-BW-background.png" alt="Image 8">
+      </div>
+    </div>
+  </div>
   <div class="designer-card">
     <div class="designer-inner teacher">
       <div class="headshot-colour"><img width="315" loading="lazy" alt="photo of jess transparent" src="images/colour-headshot.png" sizes="(max-width: 479px) 59vw, (max-width: 767px) 42vw, (max-width: 1919px) 300px, 315px" srcset="images/colour-headshot-p-500.png 500w, images/colour-headshot-p-800.png 800w, images/colour-headshot.png 1000w" class="headshot-img-colour teachers"></div>
@@ -299,6 +322,18 @@
       canvas.style.boxShadow = "none";
     }
   });
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector('.carousel');
+  const images = carousel.querySelectorAll('img');
+  if (images.length > 0) {
+    images.forEach(image => {
+      const clone = image.cloneNode(true); // Clone each image
+      carousel.appendChild(clone); // Append the clone to the carousel
+    });
+  }
+});
 </script>
 </body>
 </html>

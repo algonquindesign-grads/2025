@@ -1828,7 +1828,13 @@ figcaption {
   padding-bottom: 2rem;
 }
 
-.padding-section-large.meet-the-designers.better-padding, .padding-section-large.professors {
+.padding-section-large.meet-the-designers.better-padding {
+  padding-top: 2rem;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.padding-section-large.professors {
   padding-top: 2rem;
 }
 
@@ -2375,10 +2381,13 @@ figcaption {
 
 .divider-horizontal {
   background-color: var(--base-color-neutral--neutral-lightest);
-  width: 100%;
+  width: 90%;
+  max-width: 1920px;
   height: .5px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15%;
+  padding-right: 5%;
 }
 
 .text-weight-semibold {
@@ -2888,6 +2897,7 @@ figcaption {
 }
 
 .text-size-medium-4.text-color-alternate.meet-designers {
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 4rem;
 }
@@ -3799,7 +3809,7 @@ figcaption {
   z-index: 10;
   border: 1px #000;
   border-radius: 105vw 100vw 0 0;
-  width: 20em;
+  width: auto;
   margin-top: 0;
   padding-top: 32px;
   position: relative;
@@ -3858,6 +3868,7 @@ figcaption {
   text-align: center;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
+  width: auto;
   margin-top: 0;
   margin-bottom: .25em;
   padding-top: 0;
@@ -4101,8 +4112,10 @@ figcaption {
 }
 
 .designer-wrapper {
+  flex-flow: column;
   max-width: 1000px;
   margin-bottom: auto;
+  display: flex;
 }
 
 .designer-bio-section {
@@ -6599,7 +6612,7 @@ figcaption {
 
 .carousel-container {
   justify-content: flex-start;
-  width: 280vw;
+  width: 300vw;
   display: flex;
   position: relative;
   overflow: visible;
@@ -6607,7 +6620,7 @@ figcaption {
 
 .photo-container {
   justify-content: flex-start;
-  width: 50%;
+  width: 100%;
   display: flex;
   overflow: visible;
 }
@@ -6898,6 +6911,16 @@ figcaption {
   overflow: visible;
 }
 
+.teachers-grid {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-items: center;
+  display: grid;
+}
+
 @media screen and (min-width: 1440px) {
   .container-large.remove-gap-lg {
     padding-top: 10px;
@@ -6922,7 +6945,7 @@ figcaption {
   }
 
   .divider-horizontal {
-    width: 100%;
+    width: 90%;
   }
 
   .footer3_top-wrapper {
@@ -7294,12 +7317,18 @@ figcaption {
     color: #000;
   }
 
+  .padding-section-large.meet-the-designers.better-padding {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
   .navbar1_container {
     max-width: 1920px;
   }
 
   .divider-horizontal {
-    width: 100%;
+    width: auto;
+    max-width: 1740px;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -7383,6 +7412,11 @@ figcaption {
   .project-thumbnail-container {
     width: 100%;
     max-width: 150%;
+  }
+
+  .section_header63 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .kaleido-image {
@@ -7544,6 +7578,11 @@ figcaption {
     padding-left: 0;
   }
 
+  .designer-wrapper {
+    flex-flow: column;
+    display: flex;
+  }
+
   .layout204_image {
     float: right;
     max-width: 100%;
@@ -7606,6 +7645,17 @@ figcaption {
   .cube-row {
     margin-top: 20px;
     padding-bottom: 4rem;
+  }
+
+  .text-align-center-2 {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 
   .skills-flex {
@@ -7702,15 +7752,29 @@ figcaption {
     font-family: futura-pt, sans-serif;
   }
 
+  .kaleidoscope-canvas {
+    object-fit: cover;
+  }
+
+  .image-15 {
+    padding-left: 11px;
+  }
+
   .container-large-3 {
     padding-bottom: 0;
   }
 
   .carousel-container {
+    width: 300vw;
     overflow: visible;
   }
 
+  .photo-container {
+    width: 100%;
+  }
+
   .photo-image {
+    object-fit: cover;
     padding-left: 5px;
     padding-right: 5px;
     overflow: clip;
@@ -7757,6 +7821,8 @@ figcaption {
   }
 
   .team-photo {
+    width: 100%;
+    max-width: 150%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -8694,6 +8760,14 @@ figcaption {
 
   .prof-photo {
     max-height: 272px;
+  }
+
+  .teachers-grid {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -9753,6 +9827,11 @@ figcaption {
   .prof-name {
     padding-top: 10px;
   }
+
+  .teachers-grid {
+    flex-flow: wrap;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -9824,6 +9903,7 @@ figcaption {
   }
 
   .margin-bottom.margin-xsmall {
+    padding-top: 1rem;
     padding-bottom: .5rem;
   }
 
@@ -9974,6 +10054,10 @@ figcaption {
     padding-bottom: 0;
   }
 
+  .padding-section-large.professors {
+    padding-top: 1rem;
+  }
+
   .rl-styleguide_component {
     grid-template-columns: 1fr;
   }
@@ -10002,12 +10086,13 @@ figcaption {
   }
 
   .footer3_link-list {
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     padding-right: 0%;
   }
 
   .footer3_logo-link, .footer3_logo-link.w--current {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
   }
@@ -10037,21 +10122,23 @@ figcaption {
     grid-column-gap: 1vw;
     grid-row-gap: .5rem;
     grid-template-rows: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
   }
 
   .footer3_social-list {
-    grid-column-gap: .3rem;
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0%;
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .footer3_logo {
     text-align: center;
-    max-width: 50%;
+    max-width: 75%;
     display: block;
   }
 
@@ -10071,16 +10158,17 @@ figcaption {
   }
 
   .image {
-    max-width: 15%;
+    max-width: 30%;
   }
 
   .link-block {
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     min-width: 10%;
   }
 
   .text-block.text-weight-bold.text-color-white {
-    text-align: center;
+    text-align: right;
     font-size: .8rem;
   }
 
@@ -10143,6 +10231,11 @@ figcaption {
   .icon {
     width: 12px;
     margin-right: 9px;
+  }
+
+  .icon.logo {
+    width: 50px;
+    margin-right: auto;
   }
 
   .countdown-time {
@@ -10260,8 +10353,8 @@ figcaption {
   }
 
   .section_header63 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .heading-style-h1-2 {
@@ -10269,7 +10362,7 @@ figcaption {
   }
 
   .heading-style-h1-2.display {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
   }
 
   .kaleido-image {
@@ -10277,9 +10370,10 @@ figcaption {
   }
 
   .section-designer-cards {
+    flex-flow: wrap;
     padding-left: 5%;
     padding-right: 5%;
-    display: block;
+    display: flex;
   }
 
   .section-designer-cards.professors {
@@ -10290,7 +10384,8 @@ figcaption {
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
     place-items: stretch center;
-    display: flex;
+    padding-left: 5%;
+    display: block;
   }
 
   .headshot-colour {
@@ -10338,7 +10433,7 @@ figcaption {
     justify-content: center;
     align-items: flex-start;
     width: 159px;
-    max-width: 100%;
+    max-width: 286px;
     height: 202px;
     display: block;
     overflow: clip;
@@ -10380,7 +10475,7 @@ figcaption {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 4px;
+    padding-left: 0;
     font-family: futura-pt-bold, sans-serif;
     top: auto;
   }
@@ -10406,6 +10501,8 @@ figcaption {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    max-width: 200px;
+    margin-left: 0;
     padding-top: 0;
     padding-bottom: 1rem;
     display: flex;
@@ -11093,6 +11190,17 @@ figcaption {
 
   .prof-name {
     padding-top: 0;
+  }
+
+  .teachers-grid {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-flow: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
   }
 }
 
@@ -12556,7 +12664,7 @@ figcaption {
   place-self: auto;
 }
 
-#w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e789c401, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-6722925d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-045ed66a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d7a6e083, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-71d5194e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-57cd866d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-187bce2f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ada66300, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-00a6e7d7, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-1376ca47, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d0941276, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36979cf0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e120f7ee, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dea19d56, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-edef1950, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-56ea133f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-76745064, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36a8e4e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d1474e35, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e530ed9e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-726861f3, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9621fd21, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-895df115, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ed3babf1, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-90390dab, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-eeefabad, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3738a5e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4291ac5a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d582f367, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4e030373, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494286c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-7297e93f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda7e98a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d6141c0e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda808d8, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdefd87d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-72985171, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494d912, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-62534aea, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf06c81, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-fada6717, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-f61c404c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf0937f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dd9b94e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9653eefb, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9b811106, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c0bd1b02, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-65b786c0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c58e8ea9, #w-node-_0cd0ba55-5e62-7e3c-1d55-a036b2f736f3-d5602ed5, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c4134936 {
+#w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e789c401, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-6722925d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-045ed66a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d7a6e083, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-71d5194e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-57cd866d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-187bce2f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ada66300, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-00a6e7d7, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-1376ca47, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d0941276, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36979cf0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e120f7ee, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dea19d56, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-edef1950, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-56ea133f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-76745064, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36a8e4e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d1474e35, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e530ed9e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-726861f3, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9621fd21, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-895df115, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ed3babf1, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-90390dab, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-eeefabad, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3738a5e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4291ac5a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d582f367, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4e030373, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494286c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-7297e93f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda7e98a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d6141c0e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda808d8, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdefd87d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-72985171, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494d912, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-62534aea, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf06c81, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-fada6717, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-f61c404c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf0937f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dd9b94e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9653eefb, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9b811106, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c0bd1b02, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-65b786c0, #w-node-_0cd0ba55-5e62-7e3c-1d55-a036b2f736f3-d5602ed5, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c4134936, #w-node-b78396cf-e331-d634-e2c5-79e0c178a891-e65afd24 {
   place-self: center stretch;
 }
 
@@ -13377,7 +13485,7 @@ figcaption {
     justify-self: center;
   }
 
-  #w-node-_75abd36d-e59a-6ef3-565c-9ff86be2e2d3-a44a68aa, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3f4b3b04, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-48ccc34f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e789c401, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-6722925d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-045ed66a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d7a6e083, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-71d5194e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-57cd866d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-187bce2f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ada66300, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-00a6e7d7, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-1376ca47, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d0941276, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36979cf0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e120f7ee, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dea19d56, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-edef1950, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-56ea133f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-76745064, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36a8e4e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d1474e35, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e530ed9e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-726861f3, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9621fd21, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-895df115, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ed3babf1, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-90390dab, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-eeefabad, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3738a5e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4291ac5a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d582f367, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4e030373, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494286c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-7297e93f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda7e98a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d6141c0e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda808d8, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdefd87d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-72985171, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494d912, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-62534aea, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf06c81, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-fada6717, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-f61c404c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf0937f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dd9b94e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9653eefb, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9b811106, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c0bd1b02, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-65b786c0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c58e8ea9, #w-node-_0cd0ba55-5e62-7e3c-1d55-a036b2f736f3-d5602ed5, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c4134936 {
+  #w-node-_75abd36d-e59a-6ef3-565c-9ff86be2e2d3-a44a68aa, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3f4b3b04, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-48ccc34f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e789c401, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-6722925d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-045ed66a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d7a6e083, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-71d5194e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-57cd866d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-187bce2f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ada66300, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-00a6e7d7, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-1376ca47, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d0941276, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36979cf0, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e120f7ee, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dea19d56, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-edef1950, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-56ea133f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-76745064, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-36a8e4e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d1474e35, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-e530ed9e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-726861f3, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9621fd21, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-895df115, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-ed3babf1, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-90390dab, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-eeefabad, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-3738a5e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4291ac5a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d582f367, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-4e030373, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494286c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-7297e93f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda7e98a, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-d6141c0e, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-cda808d8, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdefd87d, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-72985171, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-5494d912, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-62534aea, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf06c81, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-fada6717, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-f61c404c, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-bdf0937f, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-dd9b94e6, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9653eefb, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-9b811106, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c0bd1b02, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-65b786c0, #w-node-_0cd0ba55-5e62-7e3c-1d55-a036b2f736f3-d5602ed5, #w-node-f61a7976-d60a-c9fd-7a10-13fa15700c0f-c4134936, #w-node-b78396cf-e331-d634-e2c5-79e0c178a891-e65afd24 {
     place-self: start;
   }
 }
